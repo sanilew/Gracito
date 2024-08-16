@@ -1,0 +1,182 @@
+body {
+    background: linear-gradient(to bottom, #FFEB3B, #FF8C42); /* Yellow to orange gradient */
+}
+
+.header-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFF9C4;
+    animation: slideInFadeIn 2s ease-out;
+}
+/* Gracito Animation for Heading */
+.heading-gracito {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000; /* Set the text color to dark black */
+    text-align: left; /* Align heading to the left */
+    animation: gracito 2s ease-out;
+}
+
+/* Gracito Animation */
+@keyframes gracito {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* Gracito Animation */
+@keyframes gracito {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Header Text Animation */
+@keyframes slideInFadeIn {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.category-sidebar {
+    background: linear-gradient(to bottom, #FFF9C4, #FFD54F); /* Light yellow to deeper yellow */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.category-sidebar .list-group-item {
+    background: linear-gradient(to bottom, #FFF176, #FFD54F); /* Lighter yellow to deeper yellow */
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 15px 10px; /* Increased padding for height */
+    line-height: 1.5; /* Adjusted line-height for better spacing */
+}
+
+.category-sidebar .list-group-item:hover,
+.category-sidebar .list-group-item.active {
+    background-color: #FFC107; /* A richer shade of yellow for hover/active state */
+    font-weight: bold;
+}
+
+.product-card {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(255, 235, 59, 0.3), rgba(255, 140, 66, 0.7)); /* Yellow to orange gradient with transparency */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FF5722; /* Orange for the discount badge */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #ddd;
+    margin-right: 10px;
+}
+
+.product-card img {
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    text-align: center;
+}
+
+.product-card .btn {
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Product Card Colors */
+.product-card-orange {
+    background: linear-gradient(to bottom, #FF8C42, #FF5722); /* Orange to darker orange */
+}
+
+.product-card-lightblue {
+    background: linear-gradient(to bottom, #42A5F5, #1E88E5); /* Light blue to medium blue */
+}
+
+.product-card-lightgreen {
+    background: linear-gradient(to bottom, #66BB6A, #43A047); /* Light green to medium green */
+}
+
+.product-card-yellow {
+    background: linear-gradient(to bottom, #FFEB3B, #FFC107); /* Yellow to deeper yellow */
+}
+
+.product-card-pink {
+    background: linear-gradient(to bottom, #FF80AB, #F06292); /* Pink to medium pink */
+}
+
+.product-card-purple {
+    background: linear-gradient(to bottom, #7E57C2, #5E35B1); /* Purple to darker purple */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .category-sidebar {
+        display: none;
+    }
+    .product-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 16px;
+    }
+    .card-text, .price {
+        font-size: 14px;
+    }
+}
